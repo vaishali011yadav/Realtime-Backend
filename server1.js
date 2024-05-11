@@ -15,7 +15,7 @@ httpServer.listen(port, () => {
 })
 
 io.on('connection', (socket) => {
-    console.log('user online')
+    console.log('user online!')
     socket.on('image-data', (data) => {
         
         socket.broadcast.emit('image-data', data)
